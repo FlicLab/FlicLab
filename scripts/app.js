@@ -24,3 +24,19 @@ window.onscroll = function (e) {
         }
     }
 }
+
+var mapOptions = {
+    center: [43.48510, -5.43414],
+        zoom: 15
+    }
+    
+    // Creating a map object
+    var map = new L.map('map', mapOptions);
+    
+    // Creating a Layer object
+    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+    let marker = new L.Marker([43.48510, -5.43414]);
+    marker.addTo(map);
+    
+    // Adding layer to the map
+    map.addLayer(layer);

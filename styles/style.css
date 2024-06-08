@@ -4,6 +4,24 @@
     --tertiary: #eabc54;
 }
 
+.nav-link {
+    transition: color .2s;
+}
+
+.nav-item:hover .nav-link {
+    color: var(--secondary);
+}
+
+#map {
+    min-height: 400px;
+}
+
+.nav-item a {
+    text-shadow: 0 0 3px #000; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+}
+
 .text-pink {
     color: var(--primary)
 }
@@ -79,7 +97,7 @@ nav {
 }
 
 .nav-moved {
-    background-color: rgb(0,0,0) !important;
+    background-color: rgba(0,0,0, 0.8) !important;
 }
 
 @keyframes bounce {

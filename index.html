@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel = "stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -59,12 +60,7 @@
             </div>
             <div id="donde-estamos" class="d-flex mt-5">
                 <div class="left p-4" style="flex-direction: column;">
-                    <p>
-                        Nuestros laboratorios están en Asturias
-                    </p>
-                    <p>
-                        Para cumplir este objetivo contamos con grandes profesionales. Ellos nos permiten crear una base sólida sobre la que desarrollar resultados precisos para ti. Queremos que te recuperes, queremos que estés bien y queremos ayudarte en el proceso.
-                    </p>
+                    <div id="map"></div>
                 </div>
                 <div class="right p-4 flex-centered">
                     <h1 class="text-yellow">¿Donde estamos?</h1>
@@ -74,7 +70,6 @@
                 <div class="container-form">
                     <span class="big-circle"></span>
                     <span class="big-circle-2"></span>
-                    <img src="img/shape.png" class="square" alt="" />
                     <div class="form">
                         <div class="contact-info">
                             <h3 class="title">Contacta con nosotros</h3>
@@ -85,15 +80,15 @@
                             <div class="info">
                                 <div class="information">
                                     <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;
-                                    <p class="m-0">92 Cherry Drive Uniondale, NY 11553</p>
+                                    <p class="m-0">Calle la Habana, Villaviciosa, 33300, España</p>
                                 </div>
                                 <div class="information">
                                     <i class="fas fa-envelope"></i>&nbsp;&nbsp;
-                                    <p class="m-0">lorem@ipsum.com</p>
+                                    <p class="m-0">fliclab@s.coop.com</p>
                                 </div>
                                 <div class="information">
                                     <i class="fas fa-phone"></i>&nbsp;&nbsp;
-                                    <p class="m-0">123-456-789</p>
+                                    <p class="m-0">911-234-567</p>
                                 </div>
                             </div>
             
@@ -151,6 +146,7 @@
         </div>
     </div>
             
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="../scripts/contact.js"></script>
     <script src="./scripts/app.js"></script>
 </body>
